@@ -3719,3 +3719,26 @@ html.is-first-load .u-anim-simple {
     padding-top: .9375rem;
     padding-bottom: .9375rem;
 }
+
+#sketch {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.hover-img {
+  --scale: 0.9;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(366px * var(--scale));
+  height: calc(450px * var(--scale));
+  opacity: 0;
+  pointer-events: none;
+}
