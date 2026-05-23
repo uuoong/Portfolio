@@ -11,6 +11,13 @@ body {
 	
 	background-color: var(--bg) !important;
 	color: var(--fg-primary) !important;
+
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 1.4;
 }
 
 html {
@@ -18,9 +25,6 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: auto;
-	min-height: 100%;
-	height: auto;
-	font-size: 10px;
 }
 
 html::-webkit-scrollbar {
@@ -32,9 +36,6 @@ body {
 	font-size: var(--body-md--font-size);
 	line-height: var(--line-height-relaxed);
     letter-spacing: var(--letter-spacing-normal);
-	margin: 0;
-	padding: 0;
-	min-height: 100%;
 	height: auto;
 }
 
