@@ -22,23 +22,27 @@
 
 /* Font Sizes (Fluid) */
 :root {
-	--display--font-size: calc(var(--unit) * 148);
-
-	--display-lg--font-size: calc(var(--unit) * 176);
+	--display--font-size: calc(var(--unit) * 112);
 	
-	--h1--font-size: calc(var(--unit) * 42);
+	--h1--font-size: calc(var(--unit) * 80);
 
-	--h2--font-size: calc(var(--unit) * 36);
+	--h2--font-size: calc(var(--unit) * 64);
 
-	--h3--font-size: calc(var(--unit) * 28);
-	
-	--body-lg--font-size: calc(var(--unit) * 36);
-	
-	--body-md--font-size: calc(var(--unit) * 28);
+	--h3--font-size: calc(var(--unit) * 48);
 
-	--body-sm--font-size: calc(var(--unit) * 20);
+	--h4--font-size: calc(var(--unit) * 32);
+
+	--h5--font-size: calc(var(--unit) * 24);
+
+	--h6--font-size: calc(var(--unit) * 16);
 	
-	--mono--font-size: calc(var(--unit) * 20);
+	--body-lg--font-size: calc(var(--unit) * 20);
+	
+	--body-md--font-size: calc(var(--unit) * 16);
+
+	--body-sm--font-size: calc(var(--unit) * 14);
+	
+	--mono--font-size: calc(var(--unit) * 16);
 }
 
 /* Font Weights */
@@ -52,9 +56,9 @@
 
 /* Line Heights */
 :root {
-	--line-height-tight: 0.97;
-	--line-height-normal: 1;
-	--line-height-relaxed: 1.13;
+	--line-height-tight: 0.95em;
+	--line-height-normal: 1.05em;
+	--line-height-relaxed: 1.2em;
 }
 
 /* Letter Spacing */
@@ -79,31 +83,61 @@
 .text-h1 {
 	font-family: var(--font-sans);
 	font-style: normal;
-	font-weight: var(--font-sans--weight-medium);
+	font-weight: var(--font-sans--weight-semibold);
 	font-size: var(--h1--font-size);
 	line-height: var(--line-height-normal);
 	letter-spacing: var(--letter-spacing-tight);
-	font-variation-settings: "wght" 550;
+	font-variation-settings: "wght" 650;
 }
 
 .text-h2 {
 	font-family: var(--font-sans);
 	font-style: normal;
-	font-weight: var(--font-sans--weight-medium);
+	font-weight: var(--font-sans--weight-semibold);
 	font-size: var(--h2--font-size);
 	line-height: var(--line-height-normal);
 	letter-spacing: var(--letter-spacing-tight);
-	font-variation-settings: "wght" 550;
+	font-variation-settings: "wght" 650;
 }
 
 .text-h3 {
 	font-family: var(--font-sans);
 	font-style: normal;
-	font-weight: var(--font-sans--weight-medium);
+	font-weight: var(--font-sans--weight-semibold);
 	font-size: var(--h3--font-size);	
 	line-height: var(--line-height-normal);
 	letter-spacing: var(--letter-spacing-tight);
-	font-variation-settings: "wght" 550;
+	font-variation-settings: "wght" 650;
+}
+
+.text-h4 {
+	font-family: var(--font-sans);
+	font-style: normal;
+	font-weight: var(--font-sans--weight-semibold);
+	font-size: var(--h4--font-size);	
+	line-height: var(--line-height-relaxed);
+	letter-spacing: var(--letter-spacing-tight);
+	font-variation-settings: "wght" 650;
+}
+
+.text-h5 {
+	font-family: var(--font-sans);
+	font-style: normal;
+	font-weight: var(--font-sans--weight-semibold);
+	font-size: var(--h5--font-size);
+	line-height: var(--line-height-relaxed);
+	letter-spacing: var(--letter-spacing-tight);
+	font-variation-settings: "wght" 650;
+}
+
+.text-h6 {
+	font-family: var(--font-sans);
+	font-style: normal;
+	font-weight: var(--font-sans--weight-semibold);
+	font-size: var(--h6--font-size);
+	line-height: var(--line-height-relaxed);
+	letter-spacing: var(--letter-spacing-tight);
+	font-variation-settings: "wght" 650;
 }
 
 .text-lg {
@@ -148,29 +182,4 @@
 	line-height: var(--line-height-normal);
 	letter-spacing: var(--letter-spacing-normal);
 	font-variation-settings: "wght" 550;
-}
-
-@media(max-width: 60.4375rem) {
-	.text-h1 {
-		font-size: calc(var(--unit) * 76);
-		line-height: var(--line-height-relaxed);
-	}
-	
-	.text-h2 {
-		font-size: calc(var(--unit) * 52);
-	}
-	
-	.text-h3 {
-		font-size: calc(var(--unit) * 76);
-		line-height: var(--line-height-relaxed);
-	}
-	
-	.text-h1 {
-		font-size: calc(var(--unit) * 76);
-		line-height: var(--line-height-relaxed);
-	}
-	
-	.text-sm {
-		font-size: calc(var(--unit) * 26);
-	}
 }
