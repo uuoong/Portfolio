@@ -36,13 +36,13 @@
 
 	--h6--font-size: calc(var(--unit) * 16);
 	
-	--body-lg--font-size: calc(var(--unit) * 20);
+	--body-lg--font-size: calc(var(--unit) * 24);
 	
-	--body-md--font-size: calc(var(--unit) * 16);
+	--body-md--font-size: calc(var(--unit) * 20);
 
-	--body-sm--font-size: calc(var(--unit) * 14);
+	--body-sm--font-size: calc(var(--unit) * 16);
 	
-	--mono--font-size: calc(var(--unit) * 16);
+	--mono--font-size: calc(var(--unit) * 20);
 }
 
 /* Font Weights */
