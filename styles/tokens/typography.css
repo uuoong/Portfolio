@@ -22,27 +22,77 @@
 
 /* Font Sizes (Fluid) */
 :root {
-	--display--font-size: calc(var(--unit) * 112);
+	--text-unit: clamp(
+		calc(var(--unit) * 16),
+		calc(var(--unit) * 16) + 4 * var(--fluid-unit),
+		calc(var(--unit) * 20)
+	);
 	
-	--h1--font-size: calc(var(--unit) * 80);
-
-	--h2--font-size: calc(var(--unit) * 64);
-
-	--h3--font-size: calc(var(--unit) * 48);
-
-	--h4--font-size: calc(var(--unit) * 32);
-
-	--h5--font-size: calc(var(--unit) * 24);
-
-	--h6--font-size: calc(var(--unit) * 16);
+	--display--font-size: clamp(
+		calc(var(--unit) * 96),
+		calc(var(--unit) * 96) + 16 * var(--fluid-unit),
+		calc(var(--unit) * 112)
+	);
 	
-	--body-lg--font-size: calc(var(--unit) * 24);
-	
-	--body-md--font-size: calc(var(--unit) * 20);
+	--h1--font-size: clamp(
+		calc(var(--unit) * 64),
+		calc(var(--unit) * 64) + 16 * var(--fluid-unit),
+		calc(var(--unit) * 80)
+	);
 
-	--body-sm--font-size: calc(var(--unit) * 16);
+	--h2--font-size: clamp(
+		calc(var(--unit) * 48),
+		calc(var(--unit) * 48) + 16 * var(--fluid-unit),
+		calc(var(--unit) * 64)
+	);
+
+	--h3--font-size: clamp(
+		calc(var(--unit) * 40),
+		calc(var(--unit) * 40) + 8 * var(--fluid-unit),
+		calc(var(--unit) * 48)
+	);
+
+	--h4--font-size: clamp(
+		calc(var(--unit) * 28),
+		calc(var(--unit) * 28) + 4 * var(--fluid-unit),
+		calc(var(--unit) * 32)
+	);
+
+	--h5--font-size: clamp(
+		calc(var(--unit) * 20),
+		calc(var(--unit) * 20) + 4 * var(--fluid-unit),
+		calc(var(--unit) * 24)
+	);
+
+	--h6--font-size: clamp(
+		calc(var(--unit) * 16),
+		calc(var(--unit) * 16) + 2 * var(--fluid-unit),
+		calc(var(--unit) * 18)
+	);
 	
-	--mono--font-size: calc(var(--unit) * 20);
+	--body-lg--font-size: clamp(
+		calc(var(--unit) * 20),
+		calc(var(--unit) * 20) + 4 * var(--fluid-unit),
+		calc(var(--unit) * 24)
+	);
+
+	--body-md--font-size: clamp(
+		calc(var(--unit) * 18),
+		calc(var(--unit) * 18) + 2 * var(--fluid-unit),
+		calc(var(--unit) * 20)
+	);
+
+	--body-sm--font-size: clamp(
+		calc(var(--unit) * 16),
+		calc(var(--unit) * 16) + 2 * var(--fluid-unit),
+		calc(var(--unit) * 18)
+	);
+	
+	--mono--font-size: clamp(
+		calc(var(--unit) * 18),
+		calc(var(--unit) * 18) + 2 * var(--fluid-unit),
+		calc(var(--unit) * 20)
+	);
 }
 
 /* Font Weights */
