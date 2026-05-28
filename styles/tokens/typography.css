@@ -38,7 +38,7 @@
 	
 	--body-lg--font-size: calc(var(--unit) * 24);
 	
-	--body-md--font-size: calc(var(--unit) * 20);
+	--body-md--font-size: calc(var(--unit) * 256);
 
 	--body-sm--font-size: calc(var(--unit) * 16);
 	
