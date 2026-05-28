@@ -23,13 +23,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: auto;
 
-	font-size: 0.9722vw; /* equals to 10px on 1440px design */
-}
-
-@media screen and (max-width: 768px) and (orientation: portrait) {
-	html {
-		font-size: 3.7333vw;
-	}
+	font-size: var(--text-unit);
 }
 
 html::-webkit-scrollbar {
