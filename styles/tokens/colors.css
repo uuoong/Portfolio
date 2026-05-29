@@ -1,28 +1,28 @@
 :root {
 	/* Pure Colors */
-	--white: #f1f1f1;
-	--black: #0e0e0e;
+	--color-black-rgb: 14, 14, 14;
+	--color-black: rgba(var(--color-black-rgb), 1);
 	
+	--color-white-rgb: 241, 241, 241;
+	--color-white: rgba(var(--color-white-rgb), 1);
+
 	/* Primitive Colors */
-	--dark-1: #0e0e0e;
-	--dark-2: #28282a;
-
-	--light-1: #f1f1f1;
-	--light-2: #eceae5;
-
+	--color-dark-rgb: 40, 40, 42;
+	--color-dark: rgba(var(--color-dark-rgb), 1);
+	
+	--color-light-rgb: 236, 234, 229;
+	--color-light: rgba(var(--color-light-rgb), 1);
+	
 	/* Point Colors */
-	--accent: #ff4401;
-
-	/* Overlay Colors */
-	--overlay: color-mix(in srgb, var(--black) 73%, transparent);
+	--color-accent: #ff4401;
 }
 
 /* Theming (Dark) */
 :root,
 html[data-theme="dark"] {
 	/* Backgrounds */
-	--bg: var(--dark-1);
-	--bg-inverse: var(--light-2);
+	--color-bg: var(--color-black);
+	--color-bg-inverse: var(--color-light);
 	
 	--image-bg: color-mix(in srgb, var(--white) 24%, transparent);
 	--image-bg-inverse: color-mix(in srgb, var(--black) 18%, transparent);
