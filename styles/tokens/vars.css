@@ -1,3 +1,21 @@
+/* Viewport Height */
+:root {
+	--vh-in-px: 8px;
+	--vh: var(--vh-in-px);
+}
+
+@media (hover: hover) {
+	:root {
+		--vh: 1vh;
+	}
+	
+	@supports (height: 1svh) {
+		:root {
+			--vh: 1svh;
+		}
+	}
+}
+
 /* Fluid System */
 :root {
 	/* Viewport */
