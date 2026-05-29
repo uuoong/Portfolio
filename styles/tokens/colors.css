@@ -65,41 +65,41 @@ html[data-theme="dark"] {
 /* Theming (Light) */
 html[data-theme="light"] {
 	/* Backgrounds */
-	--bg: var(--light-2);
-	--bg-inverse: var(--dark-1);
+	--color-bg: var(--color-light);
+	
+	--color-inverse: var(--color-black);
+	--color-on-inverse: var(--color-light);
+	
+	--color-image-bg: color-mix(in srgb, var(--color-black) 18%, transparent);
+	--color-image-bg-inverse: color-mix(in srgb, var(--color-white) 24%, transparent);
 
-	--image-bg: color-mix(in srgb, var(--black) 18%, transparent);
-	--image-bg-inverse: color-mix(in srgb, var(--white) 24%, transparent);
-	
 	/* Text */
-	--fg-primary: var(--dark-2);
-	--fg-secondary: color-mix(in srgb, var(--dark-2) 50%, transparent);
-	
-	--fg-accent: var(--accent);
-	--fg-on-accent: var(--dark-1);
-	
-	--fg-inverse: var(--light-2);
+	--color-primary: var(--color-dark);
+	--color-secondary: color-mix(in srgb, var(--color-dark) 50%, transparent);
+
+	--color-accent: var(--color-red);
+	--color-on-accent: var(--color-black);
 	
 	/* Alpha variants */
-	--neutral-100: color-mix(in srgb, var(--black) 12%, transparent);
-	--neutral-200: color-mix(in srgb, var(--black) 18%, transparent);
-	--neutral-300: color-mix(in srgb, var(--black) 46%, transparent);
+	--color-neutral-100: color-mix(in srgb, var(--color-black) 12%, transparent);
+	--color-neutral-200: color-mix(in srgb, var(--color-black) 18%, transparent);
+	--color-neutral-300: color-mix(in srgb, var(--color-black) 46%, transparent);
 
 	/* Code Highlighter */
-	--ch-background: color-mix(in srgb, var(--black) 18%, transparent);
-	--ch-identifier: #1f2937;
-	--ch-keyword: #9f1239;
-	--ch-class: #1d4ed8;
-	--ch-function: #0369a1;
-	--ch-property: #065f46;
-	--ch-string: #065f46;
-	--ch-number: #1e40af;
-	--ch-entity: #92400e;
-	--ch-jsxliterals: #6d28d9;
-	--ch-comment: #6b7280;
-	--ch-sign: #b91c1c;
-	--ch-break: transparent;
-	--ch-space: transparent;
+	--color-ch-background: color-mix(in srgb, var(--color-black) 18%, transparent);
+	--color-ch-identifier: #1f2937;
+	--color-ch-keyword: #9f1239;
+	--color-ch-class: #1d4ed8;
+	--color-ch-function: #0369a1;
+	--color-ch-property: #065f46;
+	--color-ch-string: #065f46;
+	--color-ch-number: #1e40af;
+	--color-ch-entity: #92400e;
+	--color-ch-jsxliterals: #6d28d9;
+	--color-ch-comment: #6b7280;
+	--color-ch-sign: #b91c1c;
+	--color-ch-break: transparent;
+	--color-ch-space: transparent;
 	
 	/* Color Scheme */
 	color-scheme: light;
@@ -107,7 +107,7 @@ html[data-theme="light"] {
 
 /* Theming (System) */
 @media (prefers-color-scheme: dark) {
-	:root:not([data-theme]) {
+	html:not([data-theme]) {
 		/* Backgrounds */
 		--color-bg: var(--color-black);
 		
