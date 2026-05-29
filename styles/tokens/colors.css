@@ -16,6 +16,17 @@
 	/* Point Colors */
 	--color-red-rgb: 255, 69, 1;
 	--color-red: rgba(var(--color-red-rgb), 1);
+
+	/* Alpha Tokens */
+	--alpha-black-12: rgb(var(--color-black-rgb) / 0.12);
+	--alpha-black-18: rgb(var(--color-black-rgb) / 0.18);
+	--alpha-black-24: rgb(var(--color-black-rgb) / 0.24);
+	--alpha-black-46: rgb(var(--color-black-rgb) / 0.46);
+	
+	--alpha-white-12: rgb(var(--color-white-rgb) / 0.12);
+	--alpha-white-16: rgb(var(--color-white-rgb) / 0.16);
+	--alpha-white-24: rgb(var(--color-white-rgb) / 0.24);
+	--alpha-white-40: rgb(var(--color-white-rgb) / 0.40);
 }
 
 /* Theming (Dark) */
@@ -23,27 +34,28 @@
 html[data-theme="dark"] {
 	/* Backgrounds */
 	--color-bg: var(--color-black);
+	--color-on-bg: var(--color-light);
 	
-	--color-inverse: var(--color-light);
-	--color-on-inverse: var(--color-dark);
-	
-	--color-image-bg: color-mix(in srgb, var(--color-white) 24%, transparent);
-	--color-image-bg-inverse: color-mix(in srgb, var(--color-black) 18%, transparent);
+	/* Surface */
+	--color-surface: var(--color-light);
+	--color-on-surface: var(--color-dark);
 	
 	/* Text */
-	--color-primary: var(--color-light);
-	--color-secondary: color-mix(in srgb, var(--color-light) 50%, transparent);
+	--color-text-primary: var(--color-light);
+	--color-text-secondary: rgb(var(--color-light-rgb) / 0.5);
 
+	/* Accent */
 	--color-accent: var(--color-red);
 	--color-on-accent: var(--color-black);
 	
-	/* Alpha variants */
-	--color-neutral-100: color-mix(in srgb, var(--color-white) 16%, transparent);
-	--color-neutral-200: color-mix(in srgb, var(--color-white) 24%, transparent);
-	--color-neutral-300: color-mix(in srgb, var(--color-white) 40%, transparent);
+	/* Neutral */
+	--color-neutral-100: var(--alpha-white-16);
+	--color-neutral-200: var(--alpha-white-24);
+	--color-neutral-300: var(--alpha-white-40);
 
 	/* Code Highlighter */
-	--color-ch-background: color-mix(in srgb, var(--color-white) 24%, transparent);
+	--color-ch-background: var(--alpha-white-24);
+	
 	--color-ch-identifier: #e5e7eb;
 	--color-ch-keyword: #f472b6;
 	--color-ch-class: #93c5fd;
@@ -66,27 +78,28 @@ html[data-theme="dark"] {
 html[data-theme="light"] {
 	/* Backgrounds */
 	--color-bg: var(--color-light);
+	--color-on-bg: var(--color-dark);
 	
-	--color-inverse: var(--color-black);
-	--color-on-inverse: var(--color-light);
-	
-	--color-image-bg: color-mix(in srgb, var(--color-black) 18%, transparent);
-	--color-image-bg-inverse: color-mix(in srgb, var(--color-white) 24%, transparent);
+	/* Surface */
+	--color-surface: var(--color-black);
+	--color-on-surface: var(--color-light);
 
 	/* Text */
-	--color-primary: var(--color-dark);
-	--color-secondary: color-mix(in srgb, var(--color-dark) 50%, transparent);
+	--color-text-primary: var(--color-dark);
+	--color-text-secondary: rgb(var(--color-dark-rgb) / 0.5);
 
+	/* Accent */
 	--color-accent: var(--color-red);
 	--color-on-accent: var(--color-black);
 	
-	/* Alpha variants */
-	--color-neutral-100: color-mix(in srgb, var(--color-black) 12%, transparent);
-	--color-neutral-200: color-mix(in srgb, var(--color-black) 18%, transparent);
-	--color-neutral-300: color-mix(in srgb, var(--color-black) 46%, transparent);
+	/* Neutral */
+	--color-neutral-100: var(--alpha-black-12);
+	--color-neutral-200: var(--alpha-black-18);
+	--color-neutral-300: var(--alpha-black-46);
 
 	/* Code Highlighter */
-	--color-ch-background: color-mix(in srgb, var(--color-black) 18%, transparent);
+	--color-ch-background: var(--alpha-black-18);
+	
 	--color-ch-identifier: #1f2937;
 	--color-ch-keyword: #9f1239;
 	--color-ch-class: #1d4ed8;
@@ -110,27 +123,28 @@ html[data-theme="light"] {
 	html:not([data-theme]) {
 		/* Backgrounds */
 		--color-bg: var(--color-black);
+		--color-on-bg: var(--color-light);
 		
-		--color-inverse: var(--color-light);
-	    --color-on-inverse: var(--color-dark);
-	
-	    --color-image-bg: color-mix(in srgb, var(--color-white) 24%, transparent);
-	    --color-image-bg-inverse: color-mix(in srgb, var(--color-black) 18%, transparent);
+		/* Surface */
+		--color-surface: var(--color-light);
+		--color-on-surface: var(--color-dark);
 		
 		/* Text */
-		--color-primary: var(--color-light);
-		--color-secondary: color-mix(in srgb, var(--color-light) 50%, transparent);
+		--color-text-primary: var(--color-light);
+		--color-text-secondary: rgb(var(--color-light-rgb) / 0.5);
 		
+		/* Accent */
 		--color-accent: var(--color-red);
 		--color-on-accent: var(--color-black);
 		
-		/* Alpha variants */
-		--color-neutral-100: color-mix(in srgb, var(--color-white) 16%, transparent);
-		--color-neutral-200: color-mix(in srgb, var(--color-white) 24%, transparent);
-		--color-neutral-300: color-mix(in srgb, var(--color-white) 40%, transparent);
+		/* Neutral */
+		--color-neutral-100: var(--alpha-white-16);
+		--color-neutral-200: var(--alpha-white-24);
+		--color-neutral-300: var(--alpha-white-40);
 		
 		/* Code Highlighter */
-		--color-ch-background: color-mix(in srgb, var(--color-white) 24%, transparent);
+		--color-ch-background: var(--alpha-white-24);
+		
 		--color-ch-identifier: #e5e7eb;
 		--color-ch-keyword: #f472b6;
 		--color-ch-class: #93c5fd;
